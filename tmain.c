@@ -11,7 +11,7 @@
 int main(){
 	printf("Enter your text: ");
 	putword(word);
-	scanf(" %c",&op);
+	if (scanf(" %c",&op)!=1) return 1;
 	if(op =='a'){
 		print_lines(word);
 	}
@@ -20,6 +20,4 @@ int main(){
 	}
 	return 0;
 }
-
-
 

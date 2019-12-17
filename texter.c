@@ -12,6 +12,7 @@
 
 int putword(char s[]){
 	char c= getchar();
+	if (c == EOF) return -1;
 	int index=0;
 	while(c== ' ' || c=='\n' || c== '\t') c=getchar();
 	if(c == EOF) return 1;
@@ -26,6 +27,7 @@ int putword(char s[]){
 
 int putline(char s[]){
 	char c=getchar();
+	if (c == EOF) return -1;
 	int index=0;
 	while(c=='\n'){
 		c =getchar();
